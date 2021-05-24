@@ -1,1 +1,6 @@
 
+conda list ==> to check all installed packages
+python -V ==> to check python version
+python --version ==> to check python version
+cls ==> clean the screen
+open two spyder instances ==> spyder --new-instance
