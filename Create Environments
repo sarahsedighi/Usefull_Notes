@@ -1,1 +1,51 @@
 
+How to Create Environments
+
+1- windows search ==> cmd ==> open Propmt (Run as administrator)
+2- conda list ==> to check all the packages
+3- we want to make these environmets: (we already have a default environment)
+   tf_1.9 : Python: 3.6
+             Tensorflow: 1.9
+             CUDA: 9
+             cuDNN:7
+   tf_1.13 : Python: 3.6
+             Tensorflow: 1.13
+             CUDA: 10
+             cuDNN:7.4
+   tf_2.1 : Python: 3.7
+             Tensorflow: 2.1
+             CUDA: 10.1
+             cuDNN:7.4
+
+to create tf_1.9
+1- conda create --name tf_1.13 python=3.6
+2- conda env list ==> gives a list of environments
+3- activate tf_1.9 ==> to activate tf_1.9
+4- conda list ==> gives a list of packages in new environment
+5- conda install tensorflow-gpu=1.9
+6- conda list ==> shows tensorflow 1.9 installed
+
+to create tf_1.13
+1- deactivate ==> returns to the basic environment
+2- conda create --name tf_1.13 python=3.6
+3- conda env list ==> gives a list of environments
+4- activate tf_1.13 ==> to activate tf_1.13
+5- conda list ==> gives a list of packages in new environment
+6- conda install tensorflow-gpu=1.13
+7- conda list ==> shows tensorflow 1.13 installed
+
+to create tf_2.1
+1- deactivate ==> returns to the basic environment
+2- conda create --name tf_2.1 python=3.7
+3- conda env list ==> gives a list of environments
+4- activate tf_2.1 ==> to activate tf_2.1
+5- conda list ==> gives a list of packages in new environment
+6- conda install tensorflow-gpu=2.1
+7- conda list ==> shows tensorflow 2.1 installed
+
+Use Python Interpreter to select the environment.
+
+
+
+
+
