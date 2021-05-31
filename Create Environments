@@ -45,7 +45,10 @@ to create tf_2.1
 
 Use Python Interpreter to select the environment.
 
-
+in conda prompt:
+1- conda activate env_name
+2- conda install spyder
+3- spyder
 
 
 
