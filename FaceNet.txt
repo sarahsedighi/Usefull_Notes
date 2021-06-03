@@ -1,0 +1,18 @@
+https://pypi.org/project/keras-facenet/
+
+1- Installing:
+pip install keras-facenet
+
+2- Usage:
+from keras_facenet import FaceNet
+embedder = FaceNet()
+
+# Gets a detection dict for each face
+# in an image. Each one has the bounding box and
+# face landmarks (from mtcnn.MTCNN) along with
+# the embedding from FaceNet.
+detections = embedder.extract(image, threshold=0.95)
+
+# If you have pre-cropped images, you can skip the
+# detection step.
+embeddings = embedder.embeddings(images)
