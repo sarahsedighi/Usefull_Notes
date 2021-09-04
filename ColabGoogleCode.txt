@@ -1,0 +1,23 @@
+
+from google.colab import drive
+drive.mount('/content/drive')
+
+cd /content/drive/MyDrive/Face/DSFD.pytorch
+
+!python prepare_darkface100_data.py
+
+!python eval.py --dataset Darkface100 --model ./weights/wider/vgg/dsfd.pth
+
+!python -W ignore eval.py --dataset wider_dist --model ./weights/wider/pyramidbox.pth
+
+!python train.py --batch_size 4 --lr 5e-4 --model vgg --dataset wider_dist --resume ./weights/wider_dist/vgg/dsfd_checkpoint.pth
+
+!python train.py --batch_size 4 --lr 5e-4 --model vgg --dataset wider_dist --resume ./weights/wider_dist/vgg/dsfd_checkpoint.pth
+
+
+
+
+
+
+
+
